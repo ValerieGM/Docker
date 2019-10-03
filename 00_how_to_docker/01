@@ -1,0 +1,3 @@
+#create a virtual machine  (docker-machine) using the virtualbox driver (-d "virtualbox"), named Char
+
+docker-machine create -d "virtualbox" Char

@@ -1,0 +1,7 @@
+#docker ps used options to get container id
+# -a :: show all containers includeing those not currently running
+# -f :: filter based on conditions provided
+# -q :: only display numeric IDs
+
+CID = $(docker ps -aqf "name=overlord")
+docker inspect $CID

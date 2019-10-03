@@ -1,0 +1,4 @@
+#same functionality ad git pull, just from the docker hub
+#side note:: environment needs to be set in order to pull
+
+docker pull hello-world

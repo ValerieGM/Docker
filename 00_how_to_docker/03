@@ -1,0 +1,8 @@
+#docker ps -- list containers
+#   -will run with errors because the environment for the created container has not been set up as yet and the following commands will rectify that
+
+#show the command/s to setup the environment for client (Char)
+docker-machine env Char
+
+#given command to set up the environment when the previous comman is run
+eval $(docker-machine env Char)

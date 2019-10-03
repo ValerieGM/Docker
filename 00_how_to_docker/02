@@ -1,0 +1,3 @@
+#get ip address of specified machine
+
+docker-machine ip Char
