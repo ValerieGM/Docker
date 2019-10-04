@@ -4,7 +4,8 @@
 # -q :: only display numeric IDs
 
 
-#CID = $(docker ps -aqf "name=overlord") ----- will figure it out
+ docker inspect $(docker ps -aqf "name=overlord") | grep '"IPAddress"'
 
-#docker inspect overlord | grep '"IPAddress"'
-docker inspect -f "{{ .NetworkSettings.IPAddress }}" overlord
+# docker inspect overlord | grep '"IPAddress"'
+
+# docker inspect -f "{{ .NetworkSettings.IPAddress }}" overlord
