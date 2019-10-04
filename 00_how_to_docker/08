@@ -1,0 +1,11 @@
+# minimal docker image based on Alpine Linux with a complete package index
+# TTY --> teletypewriter
+#  -used to print the filename of the terminal connected to the standard output
+#  -printf file name of standard input's terminal
+#
+# MAN docker run --help
+#  --rm --> automatically remove the container when it exits (container deletes itself once the shell's execution is done)
+#  -i --> keeps the standard input open (interact directly with the container via terminal)
+#  -t --> allocate a pseudo TTY
+
+docker run -i --rm alpine
