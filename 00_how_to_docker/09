@@ -1,0 +1,4 @@
+# run in the background so as to keep it open to execute in the debian container
+# exec --> execute in docker-container from docker-machine
+
+docker run -dt --name debian --restart always debian /bin/sh && docker exec -it debian /bin/sh -c "apt-get update; apt-get upgrade; apt-get install gcc; apt-get install git"

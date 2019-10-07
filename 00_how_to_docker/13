@@ -1,0 +1,8 @@
+# printing the environment variables of previously configured container
+# env --> environment variables of the preceeding container
+
+docker exec spawning-pool env
+
+# for th fun of it just to see how it would work 
+# https://stackoverflow.com/questions/34051747/get-environment-variable-from-docker-container/34052766
+# docker exec spawning-pool printenv VARIABLE

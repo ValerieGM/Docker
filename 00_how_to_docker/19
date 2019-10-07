@@ -1,0 +1,5 @@
+# https://hub.docker.com/_/python
+# man docker exec 
+
+docker run --name Abathur -v ~/Abathur/root -p 3000:3000 python:2-slim &&
+docker exec Abathur /bin/bash -c "pip install flask; echo from flask import Flask\\napp = Flask(__name__)\\n@app.route("'/'")\\ndef hello_world():\\n\\treturn '<h1>Hello World</h1>' > helloWorld.py"

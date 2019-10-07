@@ -1,0 +1,3 @@
+# list volumes created on the machine
+
+docker volume ls

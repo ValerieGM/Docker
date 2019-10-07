@@ -4,5 +4,5 @@
 #show the command/s to setup the environment for client (Char)
 docker-machine env Char
 
-#given command to set up the environment when the previous comman is run
-eval $(docker-machine env Char)
+#given command to set up the environment when the previous comman is run in termminal
+#eval $(docker-machine env Char)
