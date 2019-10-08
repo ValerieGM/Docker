@@ -1,15 +1,17 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    16                                                 :+:      :+:    :+:    #
+#    26                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/08 13:02:42 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 13:02:44 by vgongora         ###   ########.fr        #
+#    Created: 2019/10/08 15:51:03 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 16:45:23 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# browse through spawning-pool's logs
+# https://hub.docker.com/r/42school/engineering-bay/
+# --replicas --> option to define the specfed number of tasks you want done
 
-docker logs -f spawning-pool
+docker service create --name engineering-bay --network overmind -e OC_USERNAME=user -e OC_PASSWD=password --replicas 2 rabbitmq
+

@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    24                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 15:21:37 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 16:16:37 by vgongora         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# rabbitq SERVICE
+# http://www.appsdeveloperblog.com/run-rabbitmq-docker-container-command/
+# https://hub.docker.com/_/rabbitmq
+# docker service --> starting point to manage services (kinda no run option)
+# docker service create --> create specified service along with a few options as follows::
+#  --name --> name the service orbital-command
+#  -e --> environment variab;es such as password and username related to the service
+#  --network --> network attachments
+
+docker service create --name orbit-command -e RABBITMQ_DEFAULT_USER=user -e RABITMQ_DEFAULT_PASS=password --network overmind rabbitmq

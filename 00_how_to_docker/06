@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 13:00:00 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 13:00:01 by vgongora         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #search for and pull the NGINX official image from docker hub
 # https://www.docker.com/blog/tips-for-deploying-nginx-official-image-with-docker/
 # -d option run container in the background and print the container id

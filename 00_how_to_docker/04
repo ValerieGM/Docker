@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 12:59:51 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 12:59:52 by vgongora         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #same functionality ad git pull, just from the docker hub
 #side note:: environment needs to be set in order to pull
 

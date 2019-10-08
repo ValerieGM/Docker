@@ -1,15 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    16                                                 :+:      :+:    :+:    #
+#    21                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/08 13:02:42 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 13:02:44 by vgongora         ###   ########.fr        #
+#    Created: 2019/10/08 12:51:04 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 12:53:13 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# browse through spawning-pool's logs
+##create a virtual machine  (docker-machine) using the virtualbox driver (-d "virtualbox"), named Aiur
 
-docker logs -f spawning-pool
+docker-machine create -d "virtualbox" Aiur

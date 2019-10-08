@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 13:00:05 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 13:00:07 by vgongora         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #docker ps used options to get container id
 # -a :: show all containers includeing those not currently running
 # -f :: filter based on conditions provided

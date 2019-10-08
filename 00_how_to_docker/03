@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 12:59:46 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 12:59:47 by vgongora         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #docker ps -- list containers
 #   -will run with errors because the environment for the created container has not been set up as yet and the following commands will rectify that
 
