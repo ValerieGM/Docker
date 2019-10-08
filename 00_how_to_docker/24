@@ -19,4 +19,4 @@
 #  -e --> environment variab;es such as password and username related to the service
 #  --network --> network attachments
 
-docker service create --name orbit-command -e RABBITMQ_DEFAULT_USER=user -e RABITMQ_DEFAULT_PASS=password --network overmind rabbitmq
+docker service create -d --name orbit-command -e RABBITMQ_DEFAULT_USER=user -e RABITMQ_DEFAULT_PASS=password --network overmind rabbitmq

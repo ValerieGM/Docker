@@ -1,16 +1,13 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    25                                                 :+:      :+:    :+:    #
+#    28                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/08 15:49:22 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 17:47:00 by vgongora         ###   ########.fr        #
+#    Created: 2019/10/08 17:41:53 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 17:48:19 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# list all the services in the local swarm
-# man docker service help
-
-docker service ls
+docker service create --name marines --network overmind -e OC_USERNAME=user -e OC_PASSWD=password --replicas 2 42school/marine-squad

@@ -1,16 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    25                                                 :+:      :+:    :+:    #
+#    33                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/08 15:49:22 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 17:47:00 by vgongora         ###   ########.fr        #
+#    Created: 2019/10/08 17:56:21 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/08 17:58:12 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# list all the services in the local swarm
-# man docker service help
+remve="$(docker images -aq)"
 
-docker service ls
+docker rmi ${remve}
