@@ -6,7 +6,7 @@
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/09 11:16:40 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/09 17:01:23 by vgongora         ###   ########.fr        #
+#    Updated: 2019/10/10 11:24:57 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,4 +27,4 @@ FROM alpine
 
 RUN apk update && apk upgrade && apk add vim
 
-ENTRYPOINT vim
+#ENTRYPOINT vim
