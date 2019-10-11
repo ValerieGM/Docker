@@ -6,12 +6,12 @@
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/08 15:51:03 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 16:52:51 by vgongora         ###   ########.fr        #
+#    Updated: 2019/10/11 16:16:01 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # https://hub.docker.com/r/42school/engineering-bay/
 # --replicas --> option to define the specfed number of tasks you want done
 
-docker service create -d --name engineering-bay --network overmind --replicas 2 -e OC_USERNAME=user -e OC_PASSWD=password  42school/engineering-bay
+docker service create --name engineering-bay -e OC_USERNAME=root -e OC_PASSWD=root --network overmind --replicas 2 42school/engineering-bay
 

@@ -6,7 +6,7 @@
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/08 15:21:37 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/08 16:16:37 by vgongora         ###   ########.fr        #
+#    Updated: 2019/10/11 13:49:39 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,4 +19,4 @@
 #  -e --> environment variab;es such as password and username related to the service
 #  --network --> network attachments
 
-docker service create -d --name orbit-command -e RABBITMQ_DEFAULT_USER=user -e RABITMQ_DEFAULT_PASS=password --network overmind rabbitmq
+docker service create --name orbit-command -e RABBITMQ_DEFAULT_USER=root -e RABITMQ_DEFAULT_PASS=root --network overmind rabbitmq
