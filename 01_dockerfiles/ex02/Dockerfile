@@ -1,26 +1,17 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Dokerfile                                          :+:      :+:    :+:    #
+#    Dockerfile                                         :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgongora <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/11 16:16:34 by vgongora          #+#    #+#              #
-#    Updated: 2019/10/11 17:23:07 by vgongora         ###   ########.fr        #
+#    Created: 2019/10/14 12:05:30 by vgongora          #+#    #+#              #
+#    Updated: 2019/10/14 12:06:41 by vgongora         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# -ONBUILD --> instruction adds to the image a trigger instruction to be executed at a later time, when the image is used as the base for another build. The trigger will be executed in the context of the downstream build,  as if it had been inserted immediately after the FROM  instruction in the downstream Dockerfile.
-#  **any build instruction can be registered as a trigger.
-
-##Steps:
-# run container (linux  I believe)
-# install ruby (research)
-# create rails app
-# run app and access it (localhost:3000)
-
-FROM ruby
-
-
+FROM ft-rails:on-build
 
 EXPOSE 3000
+
+CMD ["rails", "a", "-b", "0.0.0.0", "-p", "3000"]
