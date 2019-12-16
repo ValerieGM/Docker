@@ -10,6 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
+#All checks and go for new brnch commits :-)
+
 FROM ft-rails:on-build
 
 EXPOSE 3000
